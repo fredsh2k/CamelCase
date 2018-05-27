@@ -25,11 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CalendarActivity" />
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
         <activity android:name=".QuestionsActivity" />
-        <activity android:name=".CalendarActivity" />
         <activity android:name=".Part1"
             android:label="@string/title_activity_part1"
             android:theme="@style/AppTheme.NoActionBar" />
