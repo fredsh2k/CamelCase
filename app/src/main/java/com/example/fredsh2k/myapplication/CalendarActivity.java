@@ -1,10 +1,13 @@
 package com.example.fredsh2k.myapplication;
 
 import java.util.Calendar;
+import java.util.Date;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.github.sundeepk.compactcalendarview.CompactCalendarView;
 import com.github.sundeepk.compactcalendarview.domain.Event;
@@ -12,6 +15,17 @@ import com.github.sundeepk.compactcalendarview.domain.Event;
 public class CalendarActivity extends AppCompatActivity {
 
     private CompactCalendarView calendar;
+
+    private boolean isGoodDate(Date date) {
+        if (date.toString().contains("May 20")) return true;
+        if (date.toString().contains("May 21")) return true;
+        if (date.toString().contains("May 22")) return false;
+        if (date.toString().contains("May 23")) return true;
+        if (date.toString().contains("May 24")) return true;
+        if (date.toString().contains("May 25")) return false;
+        if (date.toString().contains("May 26")) return true;
+        return true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,5 +46,21 @@ public class CalendarActivity extends AppCompatActivity {
             Event ev1 = new Event(Color.RED, time);
             calendar.addEvent(ev1);
         }
+
+        calendar.setListener(new CompactCalendarView.CompactCalendarViewListener() {
+            @Override
+            public void onDayClick(Date dateClicked) {
+                Context context = getApplicationContext();
+
+                if (isGoodDate(dateClicked)) {
+                    Toast.makeText(context, "You've been so brave today!", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(context, "Didn't do mission today. Try again tomorrow", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onMonthScroll(Date firstDayOfNewMonth) {}
+        });
     }
 }
