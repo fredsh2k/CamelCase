@@ -83,6 +83,7 @@
             android:visibility="visible"
             tools:layout_editor_absoluteX="99dp"
             tools:layout_editor_absoluteY="300dp"
+            android:onClick="goToPart4"
             />
 
         <Button
@@ -96,5 +97,22 @@
             tools:layout_editor_absoluteY="363dp" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/pointsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:layout_editor_absoluteX="29dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points: "
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="16dp" />
 
 </android.support.constraint.ConstraintLayout>
