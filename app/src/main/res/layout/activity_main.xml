@@ -4,31 +4,96 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@mipmap/bg"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="83dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:text="Calendar"
+    <LinearLayout
+        android:layout_width="202dp"
+        android:layout_height="579dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="135dp"
-        android:onClick="goToCalendar"/>
+        tools:layout_editor_absoluteY="41dp">
 
-    <Button
-        android:id="@+id/part1button"
-        android:layout_width="118dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorAccent"
-        android:text="Start Your Journey"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        android:onClick="goToPart1"/>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:background="#b12f059b"
+            android:onClick="goToCalendar"
+            android:paddingVertical="10dp"
+            android:text="Calendar"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/part1button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/part1button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorAccent"
+            android:onClick="goToPart1"
+            android:padding="10dp"
+            android:text="Admit That You Are Scared"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/button6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorAccent"
+            android:padding="10dp"
+            android:text="Validate your feelings"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="171dp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorAccent"
+            android:text=" Name your fear"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="236dp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorAccent"
+            android:text="Examine your fears"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="300dp"
+            />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@color/colorAccent"
+            android:text="Focus on what you can control"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="363dp" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

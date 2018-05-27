@@ -5,16 +5,23 @@ import java.util.Date;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.provider.Telephony;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.sundeepk.compactcalendarview.CompactCalendarView;
 import com.github.sundeepk.compactcalendarview.domain.Event;
 
+import org.w3c.dom.Text;
+
 public class CalendarActivity extends AppCompatActivity {
 
     private CompactCalendarView calendar;
+    private static String braveText = "";
 
     private boolean isGoodDate(Date date) {
         if (date.toString().contains("May 20")) return true;
@@ -57,10 +64,20 @@ public class CalendarActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(context, "Didn't do mission today. Try again tomorrow", Toast.LENGTH_SHORT).show();
                 }
+
+                TextView mTextView1 = (TextView)findViewById(R.id.textView1);
+                mTextView1.setText(braveText);
+                mTextView1.setVisibility(View.VISIBLE);
+
+
             }
 
             @Override
             public void onMonthScroll(Date firstDayOfNewMonth) {}
         });
+    }
+
+    public static void setText(String text) {
+        braveText = text;
     }
 }
