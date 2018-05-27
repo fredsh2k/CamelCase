@@ -21,9 +21,25 @@
         android:id="@+id/button"
         android:layout_width="83dp"
         android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
         android:onClick="goToCalendar"
         android:text="Button"
-        tools:layout_editor_absoluteX="97dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="135dp" />
+
+    <Button
+        android:id="@+id/part1button"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:onClick="goToPart1"
+        android:text="Start Your Journey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </android.support.constraint.ConstraintLayout>

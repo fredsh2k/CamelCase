@@ -106,6 +106,11 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
+    public void goToPart1(View view) {
+        Intent intent = new Intent(this, Part1.class);
+        startActivity(intent);
+    }
+
     public void onLogin(View view){
         Intent login = new Intent(this,LoginActivity.class);
         startActivity(login);

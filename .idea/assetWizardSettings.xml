@@ -19,6 +19,9 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
+                                      <entry key="foregroundImage" value="$USER_HOME$/Pictures/CamelCase/admit_fears.jpg" />
+                                      <entry key="foregroundLayerName" value="admit_fears" />
+                                      <entry key="outputName" value="admit_fears_name" />
                                       <entry key="foregroundImage" value="C:\Users\User\Desktop\icon_facebook.png" />
                                       <entry key="foregroundLayerName" value="facebook_icon_layer" />
                                       <entry key="outputName" value="facebook_icon" />
