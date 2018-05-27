@@ -1,5 +1,6 @@
 package com.example.fredsh2k.myapplication;
 
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputLayout;
@@ -26,5 +27,10 @@ public class activity_part2 extends AppCompatActivity {
         myToast.show();
         journal1 = ((TextInputLayout)findViewById(R.id.input1)).getEditText().getText().toString();
         CalendarActivity.setText(journal1);
+    }
+
+    public void goReadMe(View view){
+        Intent read = new Intent(this,part2reading.class);
+        startActivity(read);
     }
 }

@@ -20,8 +20,8 @@
                                     <map>
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
                                       <entry key="foregroundImage" value="C:\Users\User\Desktop\part2.jpg" />
-                                      <entry key="foregroundLayerName" value="part2_pic_layer" />
-                                      <entry key="outputName" value="part2_pic" />
+                                      <entry key="foregroundLayerName" value="yo_layer" />
+                                      <entry key="outputName" value="yo_pic" />
                                     </map>
                                   </option>
                                 </PersistentState>

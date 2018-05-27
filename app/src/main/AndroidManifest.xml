@@ -32,7 +32,8 @@
             android:label="@string/title_activity_part1"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".activity_part2"></activity>
+        <activity android:name=".activity_part2" />
+        <activity android:name=".part2reading"></activity>
     </application>
 
 </manifest>
