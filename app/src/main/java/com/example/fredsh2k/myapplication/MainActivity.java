@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -103,5 +104,10 @@ public class MainActivity extends AppCompatActivity
     public void goToCalendar(View view) {
         Intent intent = new Intent(this, CalendarActivity.class);
         startActivity(intent);
+    }
+
+    public void onLogin(View view){
+        Intent login = new Intent(this,LoginActivity.class);
+        startActivity(login);
     }
 }
