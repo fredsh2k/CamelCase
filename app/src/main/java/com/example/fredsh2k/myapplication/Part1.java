@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputEditText;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
@@ -40,7 +41,8 @@ public class Part1 extends AppCompatActivity {
                 "it's about what you learn along the way! " +
                 "well done!!", Toast.LENGTH_SHORT);
         myToast.show();
-        journal1 = ((TextInputEditText)findViewById(R.id.input1)).getText().toString();
+        journal1 = ((TextInputLayout)findViewById(R.id.input1)).getEditText().getText().toString();
+        CalendarActivity.setText(journal1);
     }
 
 }
