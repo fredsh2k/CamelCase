@@ -12,7 +12,9 @@
         android:layout_width="202dp"
         android:layout_height="579dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="89dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="41dp">
 
         <Button
@@ -20,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp"
-            android:background="@color/colorAccent"
+            android:background="#b12f059b"
             android:onClick="goToCalendar"
             android:paddingVertical="10dp"
             android:text="Calendar"
@@ -28,13 +30,14 @@
             app:layout_constraintBottom_toTopOf="@+id/part1button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="#FFFFFF"/>
 
         <Button
             android:id="@+id/part1button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="15dp"
             android:background="@color/colorAccent"
             android:onClick="goToPart1"
             android:padding="10dp"
@@ -50,6 +53,7 @@
             android:id="@+id/button6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
             android:background="@color/colorAccent"
             android:padding="10dp"
             android:text="Validate your feelings"
@@ -61,6 +65,7 @@
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
             android:background="@color/colorAccent"
             android:text=" Name your fear"
             android:visibility="visible"
@@ -71,11 +76,13 @@
             android:id="@+id/button9"
             android:layout_width="match_parent"
             android:layout_height="55dp"
+            android:layout_marginBottom="15dp"
             android:background="@color/colorAccent"
             android:text="Examine your fears"
             android:visibility="visible"
             tools:layout_editor_absoluteX="99dp"
-            tools:layout_editor_absoluteY="300dp" />
+            tools:layout_editor_absoluteY="300dp"
+            />
 
         <Button
             android:id="@+id/button7"
