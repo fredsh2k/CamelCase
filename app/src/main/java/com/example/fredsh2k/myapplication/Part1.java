@@ -36,7 +36,7 @@ public class Part1 extends AppCompatActivity {
         });
 
     }
-    public void congradulations(View view){
+    public void congratulations(View view){
         Toast myToast = Toast.makeText(this, "Success isn't about the end result, " +
                 "it's about what you learn along the way! " +
                 "well done!!", Toast.LENGTH_SHORT);
