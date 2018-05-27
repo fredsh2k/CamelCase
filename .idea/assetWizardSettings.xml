@@ -19,9 +19,9 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="C:\Users\User\Desktop\340.png" />
-                                      <entry key="foregroundLayerName" value="back_layer" />
-                                      <entry key="outputName" value="back" />
+                                      <entry key="foregroundImage" value="C:\Users\User\Desktop\שם משמעותי.jpg" />
+                                      <entry key="foregroundLayerName" value="background_layer" />
+                                      <entry key="outputName" value="backgound" />
                                     </map>
                                   </option>
                                 </PersistentState>
