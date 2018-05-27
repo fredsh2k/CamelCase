@@ -47,4 +47,14 @@
             android:hint="Write your fear in 1-5 lines" />
     </android.support.design.widget.TextInputLayout>
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="congradulations"
+        android:text="Submit"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/input1"
+        tools:layout_editor_absoluteX="247dp" />
+
 </android.support.constraint.ConstraintLayout>
