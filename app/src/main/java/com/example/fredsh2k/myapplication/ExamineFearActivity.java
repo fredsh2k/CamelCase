@@ -29,7 +29,7 @@ public class ExamineFearActivity extends AppCompatActivity {
 
 
 
-    protected void submit(){
+    public void submit(View view){
         Toast myToast = Toast.makeText(this, "Points +20", Toast.LENGTH_SHORT);
         myToast.show();
         MainActivity.addPoints(20);
