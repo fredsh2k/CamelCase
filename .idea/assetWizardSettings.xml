@@ -19,6 +19,9 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
+                                      <entry key="foregroundImage" value="$USER_HOME$/Pictures/CamelCase/examine_fear.jpg" />
+                                      <entry key="foregroundLayerName" value="examine" />
+                                      <entry key="outputName" value="examine_n" />
                                       <entry key="foregroundImage" value="C:\Users\User\Desktop\part2.jpg" />
                                       <entry key="foregroundLayerName" value="part2_pic_layer" />
                                       <entry key="outputName" value="part2_pic" />
