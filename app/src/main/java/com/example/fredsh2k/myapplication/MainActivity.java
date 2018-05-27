@@ -14,11 +14,18 @@ public class MainActivity extends AppCompatActivity {
     public static int points = 0;
 
     @Override
+    protected void onResume() {
+        ((TextView)findViewById(R.id.pointsTextView)).setText(Integer.toString(points));
+        super.onResume();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        ((TextView)findViewById(R.id.pointsTextView)).setText(points);
+
+        ((TextView)findViewById(R.id.pointsTextView)).setText(Integer.toString(points));
 
 
 

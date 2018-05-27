@@ -23,4 +23,5 @@
     <string name="go_to_login">go to Login</string>
     <string name="title_activity_part1">Part1</string>
     <string name="title_activity_examine_fear">ExamineFearActivity</string>
+    <string name="points">0</string>
 </resources>
