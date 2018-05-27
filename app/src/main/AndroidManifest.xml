@@ -14,7 +14,6 @@
         android:roundIcon="@mipmap/camel_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
