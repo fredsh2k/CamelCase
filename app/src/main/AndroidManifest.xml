@@ -30,7 +30,7 @@
             android:name=".Part1"
             android:label="@string/title_activity_part1"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainNavActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
