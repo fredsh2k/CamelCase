@@ -28,4 +28,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Part1.class);
         startActivity(intent);
     }
+
+    public void goToPart2(View view) {
+        Intent intent = new Intent(this, activity_part2.class);
+        startActivity(intent);
+    }
 }

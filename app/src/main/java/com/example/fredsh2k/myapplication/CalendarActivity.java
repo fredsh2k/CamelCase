@@ -5,6 +5,7 @@ import java.util.Date;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.os.Handler;
 import android.provider.Telephony;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -31,6 +32,8 @@ public class CalendarActivity extends AppCompatActivity {
         if (date.toString().contains("May 24")) return true;
         if (date.toString().contains("May 25")) return false;
         if (date.toString().contains("May 26")) return true;
+        if (date.toString().contains("May 27")) return true;
+
         return true;
     }
 
@@ -42,7 +45,7 @@ public class CalendarActivity extends AppCompatActivity {
         calendar = findViewById(R.id.compactcalendar_view);
         calendar.setFirstDayOfWeek(Calendar.SUNDAY);
 
-        long[] times = { 1526806506000L , 1526892906000L, 1527065706000L, 1527152106000L, 1527324906000L};
+        long[] times = { 1526806506000L , 1526892906000L, 1527065706000L, 1527152106000L, 1527324906000L, 1527435682000L};
         for (long time : times){
             Event ev1 = new Event(Color.GREEN, time);
             calendar.addEvent(ev1);
@@ -65,9 +68,17 @@ public class CalendarActivity extends AppCompatActivity {
                     Toast.makeText(context, "Didn't do mission today. Try again tomorrow", Toast.LENGTH_SHORT).show();
                 }
 
-                TextView mTextView1 = (TextView)findViewById(R.id.textView1);
+                final TextView mTextView1 = (TextView)findViewById(R.id.textView1);
                 mTextView1.setText(braveText);
+
                 mTextView1.setVisibility(View.VISIBLE);
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        mTextView1.setVisibility(View.INVISIBLE);
+                    }
+                }, 3000);
 
 
             }
